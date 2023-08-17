@@ -1,0 +1,11 @@
+$bpw-1200: 1200px;
+$bpw-1100: 1100px;
+$bpw-900: 900px;
+$bpw-600: 600px;
+$bpw-500: 500px;
+
+@mixin respondMax($width) {
+  @media only screen and (max-width: ($width * 1em / 16px)) {
+    @content;
+  }
+}
